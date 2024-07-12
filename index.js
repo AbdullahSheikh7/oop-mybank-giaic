@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const classes_js_1 = require("./classes.js");
+let customer = new classes_js_1.Customer("Abdullah", "Sheikh", true, 16, "03213887757");
+console.log(customer.CustomerInfo());
+let account = new classes_js_1.Account();
+console.log(`\nYour balance now is ${account.Balance}\n`);
+console.log(account.Debit(49.99));
+console.log(`Your balance is now ${account.Balance}\n`);
+console.log(account.Credit(250.99));
+console.log(`Your balance is now ${account.Balance}`);
